@@ -1,0 +1,26 @@
+extends layout
+block	cssAlone
+	link(rel='stylesheet',href='/stylesheets/sweetalert.css')
+
+block	info
+	#contains
+		#edit_log
+			button	写日志
+		#my_log	我的日志
+		table#log_list
+			thead
+				tr#log_nav
+					th#list_log_title	日志
+					th#list_log_time	日期#{session}
+			tbody
+		#log_info
+			p#log_title
+			p#log_writeWeek
+			p#log_writeTime
+		#editor_box
+			textarea#editor_id(name='content')
+		#submit_log
+			button	提交
+block jsAlone
+	script(src='/javascripts/sweetalert.min.js')
+	script	alihanniba.log()

@@ -1,0 +1,75 @@
+doctype html
+html
+	head
+		title	花一个无所谓的年纪去浪荡
+		meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+		link(rel='stylesheet', href='/stylesheets/reset.css')
+		link(rel='stylesheet', href='/stylesheets/alihanniba.css')
+	block	cssAlone
+
+	body
+	block	header
+		header#top_nav
+			div.header_nav
+				img#alihanniba_logo(src='/images/alihanniba_logo.png')
+				p#alihanniba_name	阿里汉尼拔
+				ul.show_nav
+					li.home
+						a.showing(href='/')	Home
+					li.github
+						a(href='https://github.com/alihanniba/master')	GitHub
+					li.weibo
+						a(href='http://weibo.com/2691586145/profile?topnav=1&wvr=6&is_all=1')	Weibo
+					li.bookmark
+						a(href='/bookMark')	BookMark
+					li.tools
+						a(href='tools')	Tools
+					li.log
+						a(href='/login')	Log
+					li.movie
+						a(href='/movie')	Movie
+					li.about
+						a(href='about')	About
+
+	block	info
+		div#banner
+			div.show_info
+				p#show_job	Front-end Web Developer Artisan
+				p#details
+					span.info_about_me.location_about_me	&nbsp;China Shenzhen
+					span.info_about_me.ability_about_me	&nbsp;Web development
+					span.info_about_me.sina_weibo	&nbsp;
+						a(href='http://weibo.com',target='_blank')	Weibo.com
+					span.info_about_me.github_about_me	&nbsp;
+						a(href='https://github.com/alihanniba',target='_blank')	@alihanniba
+				p#ability_info
+					span	HTML5+CSS3
+					br
+					span	javascript
+					br
+					span	jQuery
+					br
+					span	PHP
+					br
+					span	Python
+					br
+
+	block	kinderditor
+
+
+	block	footer
+		footer
+			p	alihanniba Copyright © 2015
+				a(href='http://www.miitbeian.gov.cn/')	湘ICP备15017915号
+
+	block	js
+		script(src='/javascripts/jquery-2.1.4.min.js')
+		script(src='/javascripts/alihanniba.js')
+		script(src='/kindeditor/kindeditor.js')
+		script(src='/kindeditor/lang/zh_CN.js')
+		script	alihanniba.init()
+	block	jsAlone
+
+
+
+
