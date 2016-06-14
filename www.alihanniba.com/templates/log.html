@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block centent %}
+    {{ super() }}
+{% endblock %}
+{% block info %}
+    <div id="contains">
+        <div id="editor_box">
+            <textarea id="editor_id" name="content"></textarea>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+    {{ super() }}
+{% endblock %}
+{% block js %}
+    {{ super() }}
+    <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+        $(document).ready(function () {
+            $.getJSON(
+                $SCRIPT_ROOT + '/about',
+                {
+                    a:0,
+                    b:1,
+                    now:new Date().getTime()
+                }
+            ),
+            function (data) {
+                console.log(data.result);
+            }
+        })
+    </script>
+{% endblock %}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <title>花一个无所谓的年纪去浪荡</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/alihanniba.css') }}">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+        <header id="top_nav">
+            <div class="header_nav">
+                <img src="{{ url_for('static',filename='images/alihanniba_logo.png') }}" alt="" id="alihanniba_logo">
+                <p id="alihanniba_name">阿里汉尼拔</p>
+                <ul class="show_nav">
+                    <li><a href="{{ url_for('/') }}" class="showing">Home</a></li>
+                    <li><a href="https://github.com/alihanniba/master">GitHub</a></li>
+                    <li><a href="http://weibo.com/2691586145/profile?topnav=1&wvr=6&is_all=1">Weibo</a></li>
+                    <li><a href="{{ url_for('.bookmark') }}">BookMark</a></li>
+                    <li><a href="{{ url_for('.tools') }}">Tools</a></li>
+                    <li><a href="{{ url_for('.log') }}">Log</a></li>
+                    <li><a href="{{ url_for('.movie') }}">Movie</a></li>
+                    <li><a href="{{ url_for('.about') }}">About</a></li>
+                </ul>
+            </div>
+        </header>
+    {% endblock %}
+    {% block info %}
+    <div id="banner">
+        <div class="show_info">
+            <p id="show_job">Front-end Web Developer Artisan</p>
+            <p id="details">
+                <span class="info_about_me location_about_me">&nbsp;China Shenzhen</span>
+                <span class="info_about_me ability_about_me">&nbsp;Web development</span>
+                <span class="info_about_me sina_weibo">&nbsp;<a href="http://weibo.com" target="_blank">Weibo.com</a></span>
+                <span class="info_about_me github_about_me">&nbsp;<a href="https://github.com/alihanniba" target="_blank">@alihanniba</a></span>
+            </p>
+            <p id="ability_info">
+                <span>HTML5+CSS3</span><br>
+                <span>javascript</span><br>
+                <span>jQuery</span><br>
+                <span>PHP</span><br>
+                <span>Python</span><br>
+            </p>
+        </div>
+    </div>
+    {% endblock %}
+    {% block footer %}
+    <footer>
+        <p>alihanniba Copyright © 2015 <a href="http://www.miitbeian.gov.cn/">湘ICP备15017915号</a></p>
+    </footer>
+    {% endblock %}
+    {% block js %}
+    <script src="{{ url_for('static',filename='js/jquery-2.1.4.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/alihanniba.js') }}"></script>
+    <script charset="utf-8" src="{{ url_for('static',filename='kindeditor/kindeditor.js') }}"></script>
+    <script charset="utf-8" src="{{ url_for('static',filename='kindeditor/lang/zh_CN.js') }}"></script>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+    {% endblock %}
+</body>
+</html>
