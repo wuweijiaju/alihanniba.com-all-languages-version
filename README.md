@@ -10,15 +10,21 @@
 
 ###web site
 
-# [nodeJs版](https://nodejs.alihanniba.com/)
+# nodeJs版
+
+# [https://nodejs.alihanniba.com/](https://nodejs.alihanniba.com/)
 
 ![](./screenshot/nodejs.png)
 
-# [PHP版](https://www.alihanniba.com/)
+# PHP版
+
+# [https://www.alihanniba.com/](https://www.alihanniba.com/)
 
 ![](./screenshot/PHP.png)
 
 * python版木有上线=_=
+* 原谅我nodeJs站设计是仿的[overtrue大神](http://overtrue.me/)的,侵删.
+* 原谅我PHP站设计是仿[掘金](http://gold.xitu.io/#/)与[开发者头条](http://toutiao.io/)的,侵删.
 * PHP版陆续在调整后台与前端
 * 就这样 
 
