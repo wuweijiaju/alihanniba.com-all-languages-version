@@ -5,7 +5,7 @@
 * nodeJs项目建立在express框架上
 * 上述语言暂且浅尝辄止,如有错误敬请[Issue](https://github.com/alihanniba/alihanniba.com-all-languages-version/issues)
 * 欢迎大牛指点
-* 正式项目技术栈为PHP + Laravel ,项目在我私人项目里,如有需要,Email(alihanniba@gmail.com)我吧
+* 正式项目技术栈为PHP + Laravel + webpack + sass ,项目在我私人项目里,如有需要,Email(alihanniba@gmail.com)我吧
 
 ---
 
